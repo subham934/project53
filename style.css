@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.5rem;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --main-color: #c8815f;
+  --big-font: 4.5rem;
+  --h2-font: 3.3rem;
+  --h3-font: 2rem;
+  --normal-font: 1rem;
+  --other-color: #fcfcfc;
+  --second-color: #c6c9d8bf;
+  --transition: all 0.4s ease;
+}
+
+
+section{
+    padding: 70px 5%;
+}
+
+.profile{
+    height: 100vh;
+    width: 100%;
+    background-color: #081420;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    height: auto;
+    width: 100%;
+    max-width: 460px;
+    background-color: #222429;
+    padding: 0 0 40px 0;
+    border-radius: 20px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.container:hover{
+    transform: scale(1.1);
+}
+
+.container img{
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.profile-text h1{
+    margin: 30px 0 10px;
+    font-size: 35px;
+    color: #ffffffd9;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.profile-text h4{
+    color: #efb90b;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+.icons i{
+    display: inline-block;
+    color: #ffffffd9;
+    margin: 0px 7px;
+    font-size: 18px;
+    margin-bottom: 2.2rem;
+    transition: var(--transition);
+}
+
+.icons i:hover{
+    transform: scale(1.3);
+    color: #efb90b;
+}
+
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.newsletter form {
+    width: 100%;
+    max-width: 370px;
+    position: relative;
+}
+
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    border: 2px solid #efb90b;
+    padding: 11px 90px 11px 9px;
+    border-radius: 20px;
+}
+.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: #efb90b;
+    color: #ffffffd9;
+    padding: 9px 29px;
+    border-radius: 20px;
+    cursor: pointer;
+    top: 4px;
+    right: 4px;
+}
